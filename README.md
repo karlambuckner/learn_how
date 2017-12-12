@@ -1,24 +1,29 @@
-# README
+# _LearnHow_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _A web application for hosting events providing people the opportunity to learn something exciting and new. Dec 21, 2017_
 
-Things you may want to cover:
+#### By _**Karla Buckner**_
 
-* Ruby version
+## Description
 
-* System dependencies
+## Specifications
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+## Known Bugs
 
-* Database initialization
+_There are no known bugs at this time_
 
-* How to run the test suite
+## Support and contact details
 
-* Services (job queues, cache servers, search engines, etc.)
+_Contact kmb2662@gmail.com if you have questions or feedback_
 
-* Deployment instructions
+## Technologies Used
 
-* ...
+_Ruby, Rails_
+
+### License
+
+*MIT License*
+
+Copyright (c) 2017 **_Karla Buckner_**
