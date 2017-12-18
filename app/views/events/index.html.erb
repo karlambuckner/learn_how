@@ -1,11 +1,12 @@
 <%= image_tag "logo.png" %>
 
-<h1>Events</h1>
+<div class="container">
+  <h1>Events</h1>
 
-<ul>
-  <% @events.each do |event| %>
-    <li><%= link_to event.name, event_path(event) %></li>
-  <% end %>
-</ul>
-
+  <ul>
+    <% @events.each do |event| %>
+      <li><%= link_to event.name, event_path(event) %></li>
+    <% end %>
+  </ul>
+</div>
 <%= link_to "New Event", new_event_path %>
