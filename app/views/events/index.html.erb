@@ -2,11 +2,17 @@
 
 <div class="container">
   <h1>Events</h1>
-
-  <ul>
-    <% @events.each do |event| %>
-      <li><%= link_to event.name, event_path(event) %></li>
-    <% end %>
-  </ul>
+  <div class="row">
+    <ul>
+      <% @events.each do |event| %>
+      <div class="col-md-4">
+        <li><%= image_tag %>
+        <li><%= link_to event.name, event_path(event) %></li>
+        <li><%= event.location | event.date %></li>
+        <li><%= number_to_currency event.price %></li>
+      <% end %>
+    </ul>
+      </div>
+  </div>
 </div>
 <%= link_to "New Event", new_event_path %>
