@@ -1,4 +1,4 @@
-lass OrderItemsController < ApplicationController
+class OrderItemsController < ApplicationController
   def create
   @order = current_order
   if @order.order_items.exists?(:event_id => item_params[:event_id])

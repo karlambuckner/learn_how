@@ -19,7 +19,8 @@
       <ul>
         <li><%= link_to "Events", events_path %></li>
         <li><%= link_to "Host an Event" %></li>
-        <li><%= link_to "Cart" %></li>
+        <li><%= item_total %><%= link_to 'Item(s) in Cart', '/cart' %><li>
+        <li><span class="total"><%=  number_to_currency current_order.total_price %></span><li>
         <% if current_user %>
           <li><%= link_to('Edit User', edit_user_registration_path) %></li>
         <% end %>

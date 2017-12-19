@@ -9,7 +9,7 @@ class Order < ApplicationRecord
   # validates :total_price, :presence => true
 
   def calculate_total
-    self.order_items.collect { |item| item.product.price * item.quantity }.sum
+    self.order_items.collect { |item| item.event.price * item.quantity }.sum
   end
 
    private
