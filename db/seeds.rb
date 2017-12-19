@@ -13,5 +13,7 @@ event_list = [
 ]
 
 event_list.each do |image, name, location, date, price, description|
-  Event.create( image: image, name: name, location: location, date: date, price: price, description: description )
+  event = Event.create!( image: image, name: name, location: location, date: date, price: price, description: description )
 end
+
+p "Created events"
