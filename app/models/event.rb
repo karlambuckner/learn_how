@@ -5,5 +5,4 @@ class Event < ActiveRecord::Base
   validates :location, :presence => true
   validates :image, :presence => true
   validates :date, :presence => true
-
 end

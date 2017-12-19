@@ -1,18 +1,26 @@
-<div class="mainpagePhoto"><%= image_tag("knit.jpg", size: "1000x700", alt: "Knitting") %></div>
+<%= image_tag("wax.jpg", size: "1000x700", alt: "Knitting", class: "mainpagePhoto") %>
+<br>
+<br>
 
-<div class="container">
-  <h1>Events</h1>
+  <h1 class="center">Events</h1>
+  <br>
+  <br>
   <div class="row">
     <ul>
       <% @events.each do |event| %>
       <div class="col-md-4">
-        <li><%= image_tag %>
-        <li><%= link_to event.name, event_path(event) %></li>
-        <li><%= event.location | event.date %></li>
-        <li><%= number_to_currency event.price %></li>
+        <div class="card">
+          <li><%= image_tag(event.image) %></li>
+          <li><%= link_to event.name, event_path(event) %></li>
+          <li><%= event.location %></li>
+          <li> <%= event.date %></li>
+          <li><%= number_to_currency event.price %></li>
+        </div>
+      </div>
+      <br>
+      <br>
       <% end %>
     </ul>
-      </div>
+
   </div>
-</div>
 <%= link_to "New Event", new_event_path %>
