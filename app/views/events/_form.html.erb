@@ -14,4 +14,5 @@
   <%= f.label :description %>
   <%= f.text_field :description %>
   <%= f.submit  %>
+  <%= f.hidden_field(:user_id, :value => current_user.id) %><br>
 <% end %>

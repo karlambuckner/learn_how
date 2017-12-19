@@ -11,12 +11,12 @@
       <div class="col-md-3">
         <div class="card" style="width: 20rem;">
           <%= image_tag(event.image, class: "card-img-top") %>
-          <li><%= link_to event.name, event_path(event) %></li>
+          <li><%= link_to event.name, event_path(event), remote: true %></li>
           <li><%= event.location %></li>
           <li> <%= event.date %></li>
           <li><%= number_to_currency event.price %></li>
       <br>
-      <%= form_for @order_item do |f| %>
+      <%= form_for @order_item, remote: true do |f| %>
         <%= f.hidden_field :event_id, value: event.id %>
         <%= f.number_field :quantity %>
         <%= f.submit "Add to cart", :class => 'btn btn-basic' %>

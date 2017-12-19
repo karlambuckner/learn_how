@@ -19,7 +19,10 @@ class EventsController < ApplicationController
     @event = Event.new(event_params)
     if @event.save
       flash[:notice] = "Event successfully added!"
-      redirect_to  events_path
+      respond_to do |format|
+      format.html { redirect_to events_url }
+      format.js
+      end
     else
       render :new
     end
@@ -50,5 +53,4 @@ private
   def event_params
     params.require(:event).permit(:image, :name, :location, :date, :price, :description)
   end
-
 end

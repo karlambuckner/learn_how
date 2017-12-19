@@ -10,8 +10,8 @@ Rails.application.routes.draw do
 
   root :to => 'events#index'
 
-  resources :orders
-  resources :order_items
-  resource :cart
   resources :events
+  resources :order_items
+  resource :cart, only: :show
+  resources :orders
 end

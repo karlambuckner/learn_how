@@ -1,25 +1,26 @@
 class OrderItemsController < ApplicationController
+
   def create
-  @order = current_order
-  if @order.order_items.exists?(:event_id => item_params[:event_id])
-    order_item = @order.order_items.where(:event_id =>
-    item_params[:event_id]).first
-      current_quantity = order_item.quantity
-      quantity_to_add = item_params[:quantity].to_i
-      order_item.quantity = current_quantity + quantity_to_add
-      order_item.save!
-  else
-    @item = @order.order_items.new(item_params)
+    @order = current_order
+    if @order.order_items.exists?(:event_id => item_params[:event_id])
+      order_item = @order.order_items.where(:event_id =>
+      item_params[:event_id]).first
+        current_quantity = order_item.quantity
+        quantity_to_add = item_params[:quantity].to_i
+        order_item.quantity = current_quantity + quantity_to_add
+        order_item.save!
+    else
+      @item = @order.order_items.new(item_params)
+    end
+    if @order.save
+      session[:order_id] = @order.id
+        flash[:notice] = "This event has been added to your order."
+      redirect_to root_path
+    else
+      flash[:notice] = "add an item"
+      redirect_to root_path
+    end
   end
-  if @order.save
-    session[:order_id] = @order.id
-      flash[:notice] = "This event has been added to your order."
-    redirect_to root_path
-  else
-    flash[:notice] = "add an item"
-    redirect_to root_path
-  end
-end
 
 def show
   @order = current_order
@@ -60,6 +61,6 @@ end
   private
 
   def item_params
-    params.require(:order_item).permit(:quantity, :event_id)
+    params.require(:order_item).permit(:quantity, :event_id, :order_id)
   end
 end
