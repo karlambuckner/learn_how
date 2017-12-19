@@ -28,21 +28,19 @@ ul {
 .navPhoto {
   width: 70px;
   height: 70px;
+  margin: auto;
+  display: block;
 }
 
 .mainpagePhoto {
   width: 1000px;
   height: 700px;
+  margin: auto;
+  display: block;
 }
 
 .center {
   text-align: center;
-}
-
-img {
-  margin: auto;
-  display: block;
-  width: 50%;
 }
 
 nav {
@@ -65,7 +63,7 @@ nav li {
 nav a {
   font-weight: normal;
   padding: 10px 5px;
-  font-size: .80em;
+  font-size: 20px;
 }
 
 
