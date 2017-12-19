@@ -18,7 +18,11 @@
         </div>
       </div>
       <br>
-      <br>
+        <%= form_for @order_item do |f| %>
+          <%= f.hidden_field :event_id, value: event.id %>
+          <%= f.number_field :quantity %>
+          <%= f.submit "Add to cart" %>
+        <% end %>
       <% end %>
     </ul>
 
