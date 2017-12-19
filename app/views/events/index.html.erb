@@ -19,7 +19,7 @@
       <%= form_for @order_item do |f| %>
         <%= f.hidden_field :event_id, value: event.id %>
         <%= f.number_field :quantity %>
-        <%= f.submit "Add to cart" %>
+        <%= f.submit "Add to cart", :class => 'btn btn-basic' %>
         <br>
         <br>
         </div>
