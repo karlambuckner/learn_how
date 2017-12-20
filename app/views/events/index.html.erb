@@ -2,7 +2,7 @@
 <br>
 <br>
 <div class="jumbotron">
-<h4>Welcome to LearnHow, your source for finding highly immersive and interactive events for learning something new.</h4>
+<h4>Welcome to LearnHow, your source for finding immersive and interactive events for learning something new.</h4>
 <br>
 <h5>Our events range from learning how to code, to making fresh pasta from scratch, to budgeting and everything in between. We believe learning alongside fellow neighbors creates a sense of community and camaraderie. We find that learning by observation, and by being hands on, sets a strong foundation for continued learning. Through attending one of our crash course styled events, you can get right down to it and learn all you need to proceed on your own. All of our hosts are highly experienced in their craft and supply all the materials you'll need. Discover what you can learn and continue to build on your new skills!</h5>
 </div>
@@ -19,7 +19,7 @@
           <%= image_tag(event.image, class: "card-img-top", size: "280x220" ) %>
           <br>
           <ul>
-          <li><%= link_to event.name, event_path(event), remote: true %></li>
+          <li><%= link_to event.name, event_path(event) %></li>
           <li><%= event.location %></li>
           <li> <%= event.date %></li>
           <li><%= number_to_currency event.price %></li>
@@ -38,4 +38,4 @@
     </ul>
   </div>
   </div>
-<h3><%= link_to "Admin", new_event_path %></h3>
+<h3><%= link_to "Admin- New Event", new_event_path %></h3>

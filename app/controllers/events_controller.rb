@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   before_action :authorize, :except => [:index]
-  before_action :authorize_admin, :only => [:new]
+  before_action :authorize_admin, :only => [:new, :edit, :destroy]
 
   def index
     @events = Event.all
