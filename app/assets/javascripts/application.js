@@ -15,3 +15,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function(){
+    $(".nav-wrapper").hide(0).delay(500).slideDown(2000)
+});

@@ -1,3 +1,4 @@
+<div class="pad">
 <%= image_tag(@event.image, class: "mainpagePhoto") %>
 <br>
 <br>
@@ -12,3 +13,4 @@
 <p><%= link_to "Admin- Delete", event_path(@event),
                          :data => {:confirm => "You sure?",
                                    :method => "delete"} %></p>
+</div>
