@@ -20,7 +20,7 @@ _Contact kmb2662@gmail.com if you have questions or feedback_
 
 ## Technologies Used
 
-_Ruby, Rails_
+_Ruby, Rails, jQuery, AJAX_
 
 ### License
 
