@@ -24,7 +24,7 @@
           <li> <%= event.date %></li>
           <li><%= number_to_currency event.price %></li>
       <br>
-      <%= form_for @order_item, remote: true do |f| %>
+      <%= form_for @order_item do |f| %>
         <%= f.hidden_field :event_id, value: event.id %>
         <%= f.number_field :quantity, :class => 'form-control-sm' %>
         <%= f.submit "Add to cart", :class => 'btn btn-basic' %>

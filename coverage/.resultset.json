@@ -567,6 +567,7 @@
         1,
         1,
         1,
+        1,
         null
       ],
       "/Users/karlabuckner/Desktop/learn_how/app/models/user.rb": [
@@ -603,6 +604,8 @@
         null,
         null,
         1,
+        0,
+        0,
         0,
         0,
         null,
@@ -642,6 +645,9 @@
         1,
         null,
         null
+      ],
+      "/Users/karlabuckner/Desktop/learn_how/app/controllers/accounts_controller.rb": [
+
       ],
       "/Users/karlabuckner/Desktop/learn_how/app/controllers/carts_controller.rb": [
         1,
@@ -711,6 +717,9 @@
         0,
         0,
         0,
+        0,
+        0,
+        null,
         null,
         0,
         null,
@@ -741,31 +750,24 @@
         1,
         0,
         null,
+        null
+      ],
+      "/Users/karlabuckner/Desktop/learn_how/app/controllers/hosts_controller.rb": [
+        1,
+        1,
+        0,
         null,
         null
       ],
       "/Users/karlabuckner/Desktop/learn_how/app/controllers/order_items_controller.rb": [
         1,
+        null,
         1,
         0,
         0,
         0,
-        null,
         0,
         0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
         null,
         null,
         1,
@@ -860,14 +862,14 @@
       ],
       "/Users/karlabuckner/Desktop/learn_how/app/models/order.rb": [
         1,
-        1,
-        1,
-        1,
-        1,
         null,
         1,
         1,
         1,
+        null,
+        null,
+        null,
+        null,
         null,
         1,
         0,
@@ -893,8 +895,8 @@
         null,
         null,
         1,
-        1,
-        1,
+        null,
+        null,
         null
       ],
       "/Users/karlabuckner/Desktop/learn_how/spec/factories/users.rb": [
@@ -984,8 +986,6 @@
         null,
         1,
         2,
-        2,
-        2,
         null,
         null,
         1,
@@ -1004,13 +1004,6 @@
         null,
         1,
         2,
-        2,
-        2,
-        null,
-        null,
-        1,
-        2,
-        2,
         null,
         null,
         1,
@@ -1027,6 +1020,6 @@
         null
       ]
     },
-    "timestamp": 1513715025
+    "timestamp": 1513810799
   }
 }
