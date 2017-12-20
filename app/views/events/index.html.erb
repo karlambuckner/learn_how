@@ -8,9 +8,10 @@
   <div class="row">
     <ul>
       <% @events.each do |event| %>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="card" style="width: 20rem;">
           <%= image_tag(event.image, class: "card-img-top") %>
+          <br>
           <li><%= link_to event.name, event_path(event), remote: true %></li>
           <li><%= event.location %></li>
           <li> <%= event.date %></li>
@@ -18,14 +19,14 @@
       <br>
       <%= form_for @order_item, remote: true do |f| %>
         <%= f.hidden_field :event_id, value: event.id %>
-        <%= f.number_field :quantity %>
+        <%= f.number_field :quantity, :class => 'form-control-sm' %>
         <%= f.submit "Add to cart", :class => 'btn btn-basic' %>
         <br>
         <br>
         </div>
-      </div>
       <br>
         <% end %>
+        </div>
       <% end %>
     </ul>
   </div>
