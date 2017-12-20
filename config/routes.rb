@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   root :to => 'events#index'
 
+  get "hosts/show" => "hosts#show"
   resources :events
   resources :order_items
   resource :cart, only: :show
