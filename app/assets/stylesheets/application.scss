@@ -16,6 +16,18 @@
 
 @import "bootstrap";
 
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background: #43967a;
+  color: white;
+  padding-top: 10px;
+}
+
 body {
   font-family: 'Abel', sans-serif;
   padding: 10px;
@@ -75,13 +87,9 @@ nav a {
 }
 
 .btn {
-  background-color: #35775a;
+  background-color: #43967a;
   color: white;
 }
-
-.edit_cart {
-    display: none;
-  }
 
 .pad {
   padding: 20px;
