@@ -5,13 +5,14 @@
   <h1 class="center">Events</h1>
   <br>
   <br>
+  <div class="container">
   <div class="row">
-    <ul>
       <% @events.each do |event| %>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="card" style="width: 20rem;">
-          <%= image_tag(event.image, class: "card-img-top") %>
+          <%= image_tag(event.image, class: "card-img-top", size: "280x220" ) %>
           <br>
+          <ul>
           <li><%= link_to event.name, event_path(event), remote: true %></li>
           <li><%= event.location %></li>
           <li> <%= event.date %></li>
@@ -29,5 +30,6 @@
         </div>
       <% end %>
     </ul>
+  </div>
   </div>
 <h3><%= link_to "Admin", new_event_path %></h3>
