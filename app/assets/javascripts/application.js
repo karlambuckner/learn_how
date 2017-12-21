@@ -17,5 +17,7 @@
 //= require_tree .
 
 $(document).ready(function(){
-    $(".nav-wrapper").hide(0).delay(500).slideDown(2000)
+    $("a").click(function(){
+        $(".about").slideDown(2000);
+    });
 });

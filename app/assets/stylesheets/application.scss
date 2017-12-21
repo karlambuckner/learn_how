@@ -86,7 +86,7 @@ nav a {
   padding: 25px;
 }
 
-.btn {
+.btn-basic {
   background-color: #43967a;
   color: white;
 }
@@ -96,8 +96,7 @@ nav a {
 }
 
 .jumbotron {
-  background-color: #43967a;
-  color: white;
+  background-color: white;
   width: 100%;
   margin: 0;
   padding: 17px;
@@ -112,17 +111,17 @@ nav a {
 }
 
 .test1{
-  box-shadow: 5px 5px #267dc9, -1em 0 .5em 1px #d4d6cd;
+  box-shadow: 5px 5px #2196f3, -1em 0 .5em 1px #d4d6cd;
   text-align: center;
 }
 
 .test2{
-  box-shadow: 5px 5px #267dc9, -1em 0 .5em 1px #d4d6cd;
+  box-shadow: 5px 5px #2196f3, -1em 0 .5em 1px #d4d6cd;
   text-align: center;
 }
 
 .test3{
-  box-shadow: 5px 5px #267dc9, -1em 0 .5em 1px #d4d6cd;
+  box-shadow: 5px 5px #2196f3, -1em 0 .5em 1px #d4d6cd;
   ext-align: center;
 }
 
@@ -130,4 +129,21 @@ nav a {
   padding-left: 300px;
   padding-right: 300px;
   padding-top: 60px;
+}
+
+.hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0));
+}
+
+.about {
+  display:none;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.buttonCenter {
+  color: white;
 }
