@@ -17,7 +17,7 @@
 @import "bootstrap";
 
 .footer {
-  position: relative;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -92,7 +92,7 @@ nav a {
 }
 
 .pad {
-  padding: 20px;
+  padding: 40px;
 }
 
 .jumbotron {
