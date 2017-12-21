@@ -1,5 +1,7 @@
+<div class="edit_cart">
   <%= form_for item do |f| %>
     <%= f.hidden_field :event_id, value: item.event_id %>
     <%= f.number_field :quantity %>
     <%= f.submit "Update cart" %>
     <% end %>
+</div>
