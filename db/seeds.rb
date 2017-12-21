@@ -13,7 +13,8 @@ event_list = [
   ["macs.jpg", "To Make Macarons", "Hungry Heart Bakery", "2017-01-15 05:30:00", 25, "Learn how to make macarons from scratch. All supplies provided. Go home with a 6 pack of multi-flavored macarons."],
   ["pickling.jpg", "To Pickle Vegetables", "Hollywood Farmers Market", "2017-01-05 12:30:00", 20, "Learn how to pickle vegetables. All supplies provided. Go home with a mason jar of your pickled vegetable of choice."],
   ["pottery.jpg", "To Make Pottery", "Pottery Fun", "2017-01-13 05:30:00", 25, "Learn how to make a dish of your choice. All supplies provided. Go home with your very own dish."],
-  ["meditate.jpg", "To Meditate", "The People's Yoga SE", "2017-01-20 05:30:00", 10, "Learn how to meditate. All supplies provided. Go home feeling relaxed and focused"]
+  ["meditate.jpg", "To Meditate", "The People's Yoga SE", "2017-01-20 05:30:00", 10, "Learn how to meditate. All supplies provided. Go home feeling relaxed and focused"],
+  ["chess.jpg", "To Play Chess", "Game Knight Lounge", "2017-01-14 06:30:00", 10, "Learn how to play chess. All supplies provided. You will be paired up with another new chess player to practice with! One beverage per person provided."]
 ]
 
 event_list.each do |image, name, location, date, price, description|
