@@ -1,5 +1,7 @@
 # _LearnHow_
 
+![screen shot 2018-01-02 at 11 18 38 am](https://user-images.githubusercontent.com/27794720/34496552-cf139db6-efae-11e7-8f7e-a01f9ec558e4.png)
+
 #### _A web application for hosting events providing people the opportunity to learn something exciting and new. Capstone independent project for Epicodus. Dec 21, 2017_
 
 #### By _**Karla Buckner**_
